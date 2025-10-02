@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidro Smart - Do Ar para a Terra</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/arquivo.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>HIDRO SMART</h1>
+        <p>Do Ar para a Terra: Reaproveitamento da Água Condensada</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#metodologia">Metodologia</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#grafico">Gráficos</a>
+        <a href="#video">Vídeo</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#instagram">Instagram</a>
+        <!-- Novo botão -->
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>🌍 Sobre o Projeto</h2>
+        <div class="card">
+            <p>O <strong>Hidro Smart</strong> é um sistema de coleta e gerenciamento da água proveniente da condensação de aparelhos de ar-condicionado...</p>
+        </div>
+    </section>
+
+    <!-- Seção Objetivos -->
+    <section id="objetivos">
+        <h2>🎯 Objetivos</h2>
+        <div class="card">
+            <ul>
+                <li>Reaproveitar água condensada de aparelhos de ar-condicionado.</li>
+                <li>Reduzir o consumo de água potável e os custos mensais.</li>
+                <li>Promover a conservação ambiental e a sustentabilidade.</li>
+                <li>Incentivar a cultura do uso consciente da água.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Metodologia -->
+    <section id="metodologia">
+        <h2>⚙️ Metodologia</h2>
+        <div class="card">
+            <p>O sistema funciona coletando a água da saída de aparelhos de ar-condicionado em recipientes, monitorando o nível com sensores conectados a um <strong>Arduino</strong> e transmitindo dados em tempo real via <strong>módulo Wi-Fi (ESP32)</strong>                para um aplicativo móvel.</p>
+            <a href="#" class="btn" onclick="alert('O Arduino monitora os sensores e envia dados em tempo real para o celular via app! 🚀')">Ver Funcionamento</a>
+        </div>
+    </section>
+
+    <!-- Seção Resultados -->
+    <section id="resultados">
+        <h2>📈 Resultados Esperados</h2>
+        <div class="card">
+            <ul>
+                <li>Economia na conta de água.</li>
+                <li>Maior conscientização ambiental na escola.</li>
+                <li>Redução do uso de água potável em aplicações simples.</li>
+                <li>Modelo de sustentabilidade replicável para outras instituições.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Gráficos -->
+    <section id="grafico">
+        <h2>📊 Gráficos de Economia de Água</h2>
+        <div class="card">
+            <canvas id="economiaChart"></canvas>
+        </div>
+
+        <div class="card">
+            <canvas id="linhaChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Seção Vídeo -->
+    <section id="video">
+        <h2>🎬 Vídeo de Apresentação</h2>
+        <div class="card" style="text-align: center;">
+            <video controls width="80%">
+                <source src="./assets/img/projeto(1).mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Seção Equipe -->
+    <section id="equipe">
+        <h2>👨‍🏫 Equipe</h2>
+        <div class="card">
+            <p><strong>Turma:</strong> 2º G - Mecatrônica</p>
+            <p><strong>Orientador:</strong> Leonardo Ferreira de Abreu</p>
+            <p><strong>Coorientadora:</strong> Ana Cristina Conceição Ribeiro</p>
+        </div>
+    </section>
+
+    <!-- 🔥 Nova Seção Instagram -->
+    <section id="instagram">
+        <h2>📸 Instagram</h2>
+        <div class="card" style="text-align: center;">
+            <p>Acompanhe nosso projeto no Instagram:</p>
+            <a href="https://www.instagram.com/projetohidrosmart_/" target="_blank" class="btn">Visitar Perfil</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Hidro Smart - Camaçari-BA | FECITESC 2025</p>
+    </footer>
+
+</body>
+
+</html>
