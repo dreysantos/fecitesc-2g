@@ -1,3 +1,4 @@
+/* Reset e base */
 * {
     margin: 0;
     padding: 0;
@@ -35,12 +36,14 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+    /* Prevenção de quebra em telas pequenas */
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 nav a {
+    display: inline-block;
     color: white;
     margin: 0 15px;
     text-decoration: none;
@@ -100,6 +103,22 @@ canvas {
     max-width: 100%;
 }
 
+/* Vídeo Responsivo */
+video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Imagem Responsiva */
+.card img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+}
+
 /* Rodapé */
 footer {
     background: #17252a;
@@ -119,22 +138,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Vídeo Responsivo */
-video {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin: 20px 0;
-}
-
-/* Imagem Responsiva */
-.card img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin: 20px 0;
-}
-
 /* Estilos Responsivos */
 @media (max-width: 768px) {
     header h1 {
@@ -146,15 +149,12 @@ video {
     }
 
     nav {
-        flex-direction: column;
-        align-items: center;
+        padding: 10px 5px;
     }
 
     nav a {
-        display: block;
-        margin: 10px 0;
-        font-size: 1rem;
-        text-align: center;
+        font-size: 0.95rem;
+        margin: 0 10px;
     }
 
     .card {
@@ -182,12 +182,12 @@ video {
         padding: 25px 10px;
     }
 
-    #instagram p {
-        font-size: 1rem;
+    nav a {
+        font-size: 0.9rem;
+        margin: 8px;
     }
 
-    nav a {
-        margin: 8px 0;
-        font-size: 0.95rem;
+    #instagram p {
+        font-size: 1rem;
     }
 }
