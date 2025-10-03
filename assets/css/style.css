@@ -16,9 +16,7 @@ body {
     line-height: 1.6;
 }
 
-
 /* Cabeçalho */
-
 header {
     background: linear-gradient(135deg, #2b7a78, #3aafa9);
     color: white;
@@ -30,9 +28,7 @@ header h1 {
     font-size: 2.5rem;
 }
 
-
 /* Menu de Navegação */
-
 nav {
     background: #17252a;
     padding: 10px;
@@ -54,9 +50,7 @@ nav a:hover {
     color: #3aafa9;
 }
 
-
 /* Seções */
-
 section {
     padding: 50px 20px;
     max-width: 1000px;
@@ -69,9 +63,7 @@ section h2 {
     font-size: 1.8rem;
 }
 
-
 /* Cartões de conteúdo */
-
 .card {
     background: white;
     border-radius: 12px;
@@ -85,9 +77,7 @@ section h2 {
     transform: scale(1.02);
 }
 
-
 /* Botão padrão */
-
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -103,16 +93,12 @@ section h2 {
     background: #2b7a78;
 }
 
-
 /* Canvas (Gráficos) */
-
 canvas {
     max-width: 100%;
 }
 
-
 /* Rodapé */
-
 footer {
     background: #17252a;
     color: white;
@@ -121,9 +107,7 @@ footer {
     margin-top: 40px;
 }
 
-
 /* Seção Instagram */
-
 #instagram h2 {
     text-align: center;
 }
@@ -131,4 +115,77 @@ footer {
 #instagram p {
     font-size: 1.1rem;
     margin-bottom: 10px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    /* Ajustar a fonte do título no cabeçalho */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Reduzir o padding e o espaçamento das seções */
+    section {
+        padding: 30px 15px;
+    }
+
+    /* Ajustar os links da navegação para ficarem em uma coluna */
+    nav {
+        text-align: left;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    /* Ajustar o layout dos cartões */
+    .card {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    /* Ajustar o botão */
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajustar o tamanho do vídeo para telas menores */
+    video {
+        width: 100%;
+        max-width: 480px; /* Reduzindo o tamanho do vídeo */
+        height: auto;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustar ainda mais para telas pequenas */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Ajustar o layout das seções para telas pequenas */
+    section {
+        padding: 25px 10px;
+    }
+
+    /* Ajustar o layout do menu de navegação */
+    nav a {
+        margin: 10px 0;
+    }
+
+    /* Ajustar a seção Instagram */
+    #instagram p {
+        font-size: 1rem;
+    }
+
+    /* Ajustar o tamanho do vídeo para telas pequenas */
+    video {
+        max-width: 90%; /* Reduz ainda mais o vídeo em telas muito pequenas */
+        height: auto;
+    }
 }
