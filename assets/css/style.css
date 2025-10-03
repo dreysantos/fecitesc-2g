@@ -7,7 +7,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* Rolagem suave ao clicar nos links da nav */
 }
 
 body {
@@ -36,6 +35,9 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -117,88 +119,75 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Vídeo Responsivo */
+video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Imagem Responsiva */
+.card img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+}
+
 /* Estilos Responsivos */
 @media (max-width: 768px) {
-    /* Ajustar a fonte do título no cabeçalho */
     header h1 {
         font-size: 2rem;
     }
 
-    /* Reduzir o padding e o espaçamento das seções */
     section {
         padding: 30px 15px;
     }
 
-    /* Ajustar os links da navegação para ficarem em uma coluna */
     nav {
-        text-align: left;
-        padding: 15px;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav a {
         display: block;
         margin: 10px 0;
-        text-align: left;
+        font-size: 1rem;
+        text-align: center;
     }
 
-    /* Ajustar o layout dos cartões */
     .card {
         margin: 15px 0;
         padding: 15px;
     }
 
-    /* Ajustar o botão */
     .btn {
         width: 100%;
         text-align: center;
     }
 
-    /* Ajustar o tamanho do vídeo para telas menores */
-    video {
-        width: 100%;
-        max-width: 480px; /* Reduzindo o tamanho do vídeo */
-        height: auto;
-        margin: 20px 0;
-    }
-
-    /* Ajustar a imagem para telas menores */
+    video,
     .card img {
-        width: 100%;
-        max-width: 800px; /* Reduzindo o tamanho da imagem */
-        height: auto;
-        margin: 20px 0;
+        max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    /* Ajustar ainda mais para telas pequenas */
     header h1 {
         font-size: 1.8rem;
     }
 
-    /* Ajustar o layout das seções para telas pequenas */
     section {
         padding: 25px 10px;
     }
 
-    /* Ajustar o layout do menu de navegação */
-    nav a {
-        margin: 10px 0;
-    }
-
-    /* Ajustar a seção Instagram */
     #instagram p {
         font-size: 1rem;
     }
 
-    /* Ajustar o tamanho do vídeo para telas pequenas */
-    video {
-        max-width: 90%; /* Reduz ainda mais o vídeo em telas muito pequenas */
-        height: auto;
-    }
-
-    /* Ajustar a imagem para telas muito pequenas */
-    .card img {
-        max-width: 90%; /* Reduz ainda mais a imagem */
+    nav a {
+        margin: 8px 0;
+        font-size: 0.95rem;
     }
 }
