@@ -160,6 +160,14 @@ footer {
         height: auto;
         margin: 20px 0;
     }
+
+    /* Ajustar a imagem para telas menores */
+    .card img {
+        width: 100%;
+        max-width: 800px; /* Reduzindo o tamanho da imagem */
+        height: auto;
+        margin: 20px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -187,5 +195,10 @@ footer {
     video {
         max-width: 90%; /* Reduz ainda mais o vídeo em telas muito pequenas */
         height: auto;
+    }
+
+    /* Ajustar a imagem para telas muito pequenas */
+    .card img {
+        max-width: 90%; /* Reduz ainda mais a imagem */
     }
 }
